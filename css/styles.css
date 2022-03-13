@@ -1,0 +1,276 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+li, a, button{
+    font-size: 16px;
+    color: #030a0c;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+    position: sticky;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 20px 20px;
+}
+
+.nav_links li a:hover{
+    background-color: rgb(236, 252, 251);
+}
+
+.signin button{
+    background-color: #00baf2;
+    font-weight: bold;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin: 20px 0px;
+}
+
+.signin button:hover{
+    background-color: darkblue;
+}
+
+.nav_links li:hover .drop-down{
+    display: block;
+}
+
+.drop-down{
+    display: none;
+    position: absolute;
+    top: 80px;
+    padding: 0;
+    padding-bottom: 10px;
+    margin: 0;
+    background: white;
+    border-radius: 8px;
+    border: 1px rgb(189, 189, 189);
+    border-style: solid;
+}
+
+.drop-down ul{
+    list-style: none;
+}
+
+.drop-down li{
+    padding: 20px 0px;
+    text-decoration: none;
+    display: list-item;
+    width: 200px;
+    transition: all 0.3s ease 0s;
+}
+
+.drop-down li:hover{
+    background-color: rgb(236, 252, 251);
+}
+
+.drop-down li a{
+    font-size: 15px;
+}
+
+.drop-down2, .drop-down3{
+    display: none;
+    position: absolute;
+    top: 40px;
+}
+
+.menu:hover .drop-down2, .menu2:hover .drop-down3{
+    display: block;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 200px;
+    background: white;
+    border-radius: 8px;
+    border: 1px rgb(189, 189, 189);
+    border-style: solid;
+}
+
+.drop-down2 li{
+    width: 200px;
+}
+
+.no-wallet{
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(241, 239, 239);
+    box-shadow: 0px 10px 0px 0px rgb(236, 236, 236) inset;
+}
+
+.no-wallet a{
+    font-weight: bold;
+}
+
+.options{
+    background-color: #002970;
+    height: 200px;
+    /* position: relative; */
+}
+
+.options .indi-cards:hover{
+    cursor: pointer;
+}
+
+.indi-cards{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    max-width: 100px;
+}
+
+.indi-cards:hover .card-image{
+    height: 29px;
+    margin: 8px;
+}
+
+.card-image{
+    height: 25px;
+    margin: 10px;
+}
+
+.card-desc{
+    color: white;
+    font-size: 12px;
+}
+
+.all-cards{
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.over-div{
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 50px;
+}
+
+.form{
+    border: 1px solid gray;
+    background-color: white;
+    padding: 40px;
+    display: flex;
+    margin-bottom: 50px;
+    flex-direction: column;
+    border-radius: 16px;
+}
+
+.radiogrp{
+    margin-left: -20px;
+}
+
+.radiobtn{
+    color: #00baf2;
+    font-size: 30px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.inputtext{
+    font-size: 17px;
+    border: none;
+    box-sizing: border-box;
+    margin-top: 20px;
+    /* border:none; */
+    padding: 10px;
+    border-bottom:1px solid #ebebeb;
+}
+
+.check{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.checkbox{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.checkboxdiv{
+    margin-left: 20px;
+}
+
+.fastfor{
+    color: #00baf2;
+    font-weight: bold;
+}
+
+.instantpay{
+    width: 200px;
+    font-size: 13px;
+    color: rgb(175, 175, 175);
+}
+
+.recharge{
+    padding: 20px 0px;
+    border-radius: 8px;
+    background-color: #00baf2;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.opts{
+    list-style: none;
+}
+
+.opts li{
+    margin: 15px;
+    display: inline-block;
+}
+
+.morecard:hover .moredd{
+    display: block;
+}
+
+.moredd{
+    padding: 0;
+    width: 200px;
+    margin-top: 172px;
+    margin-left: -60px;
+
+}
+
+.moredd li{
+    padding: 10px 0px;
+    margin: 0;
+    border-bottom: 1px solid rgb(187, 187, 187);
+}
+
+.moredd li:last-child{
+    border: none;
+}
+
+.moredd li:hover{
+    background-color: rgb(224, 224, 224);
+}
